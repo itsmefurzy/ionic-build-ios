@@ -55,7 +55,7 @@ jobs:
           npm i -D -E cordova-res
       - name: Build Release
         run: |
-          ionic cordova prepare
+          ionic cordova prepare --no-confirm
           ionic cordova resources
           ionic cordova platform add ios
           ionic cordova prepare ios
